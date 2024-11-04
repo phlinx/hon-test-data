@@ -1,0 +1,162 @@
+{
+    "resultCode": "0",
+    "shadow": {
+        "parameters": {
+            "quickModeZ1": {
+                "parNewVal": "0",
+                "lastUpdate": "1970-01-01T00:00:00.0Z"
+            },
+            "quickModeZ2": {
+                "parNewVal": "0",
+                "lastUpdate": "1970-01-01T00:00:00.0Z"
+            },
+            "debugEnabled": {
+                "parNewVal": "0",
+                "lastUpdate": "1970-01-01T00:00:00.0Z"
+            },
+            "stdTransRate": {
+                "parNewVal": "3600",
+                "lastUpdate": "1970-01-01T00:00:00.0Z"
+            },
+            "doorStatusZ1": {
+                "parNewVal": "0",
+                "lastUpdate": "1970-01-01T00:00:00.0Z"
+            },
+            "intelligenceMode": {
+                "parNewVal": "1",
+                "lastUpdate": "1970-01-01T00:00:00.0Z"
+            },
+            "highTransRate": {
+                "parNewVal": "1",
+                "lastUpdate": "1970-01-01T00:00:00.0Z"
+            },
+            "statusSyncRate": {
+                "parNewVal": "1440",
+                "lastUpdate": "1970-01-01T00:00:00.0Z"
+            },
+            "tempSelZ2": {
+                "parNewVal": "-18",
+                "lastUpdate": "1970-01-01T00:00:00.0Z"
+            },
+            "holidayMode": {
+                "parNewVal": "0",
+                "lastUpdate": "1970-01-01T00:00:00.0Z"
+            },
+            "tempSelZ1": {
+                "parNewVal": "6",
+                "lastUpdate": "1970-01-01T00:00:00.0Z"
+            },
+            "transMode": {
+                "parNewVal": "0",
+                "lastUpdate": "1970-01-01T00:00:00.0Z"
+            },
+            "errors": {
+                "parNewVal": "00",
+                "lastUpdate": "1970-01-01T00:00:00.0Z"
+            },
+            "tempEnv": {
+                "parNewVal": "21",
+                "lastUpdate": "1970-01-01T00:00:00.0Z"
+            },
+            "sterilizationStatus": {
+                "parNewVal": "1",
+                "lastUpdate": "1970-01-01T00:00:00.0Z"
+            }
+        }
+    },
+    "activity": {},
+    "commandHistory": {
+        "command": {
+            "macAddress": "xx-xx-xx-xx-xx-xx",
+            "commandName": "startProgram",
+            "applianceOptions": {},
+            "ancillaryParameters": {
+                "programRules": {
+                    "fixedValue": {
+                        "tempSelZ1": {
+                            "@quickModeZ1": {
+                                "1": {
+                                    "fixedValue": "1",
+                                    "typology": "fixed"
+                                }
+                            },
+                            "@intelligenceMode": {
+                                "1": {
+                                    "fixedValue": "5",
+                                    "typology": "fixed"
+                                }
+                            },
+                            "@holidayMode": {
+                                "1": {
+                                    "fixedValue": "17",
+                                    "typology": "fixed"
+                                }
+                            },
+                            "@quickModeZ2": {
+                                "1": {
+                                    "fixedValue": "@tempSelZ1",
+                                    "typology": "fixed"
+                                }
+                            }
+                        },
+                        "tempSelZ2": {
+                            "@quickModeZ1": {
+                                "1": {
+                                    "fixedValue": "@tempSelZ2",
+                                    "typology": "fixed"
+                                }
+                            },
+                            "@intelligenceMode": {
+                                "1": {
+                                    "fixedValue": "-18",
+                                    "typology": "fixed"
+                                }
+                            },
+                            "@holidayMode": {
+                                "1": {
+                                    "fixedValue": "@tempSelZ2",
+                                    "typology": "fixed"
+                                }
+                            },
+                            "@quickModeZ2": {
+                                "1": {
+                                    "fixedValue": "-24",
+                                    "typology": "fixed"
+                                }
+                            }
+                        }
+                    },
+                    "typology": "fixed",
+                    "category": "rule",
+                    "mandatory": 0
+                }
+            },
+            "applianceType": "REF",
+            "attributes": {
+                "prStr": "PROGRAMS.REF.ECO_MODE",
+                "channel": "mobileApp",
+                "origin": "standardProgram"
+            },
+            "device": {
+                "appVersion": "2.12.9",
+                "deviceModel": "cheetah",
+                "osVersion": "35",
+                "mobileId": "11xx1xxx11xx1x1x",
+                "mobileOs": "android"
+            },
+            "parameters": {
+                "intelligenceMode": "1"
+            },
+            "transactionId": "xx-xx-xx-xx-xx-xx_1970-01-01T00:00:00.0Z",
+            "timestamp": "1970-01-01T00:00:00.0Z"
+        },
+        "timestampAccepted": "1970-01-01T00:00:00.0Z",
+        "timestampExecuted": "1970-01-01T00:00:00.0Z"
+    },
+    "lastConnEvent": {
+        "macAddress": "xx-xx-xx-xx-xx-xx",
+        "category": "CONNECTED",
+        "instantTime": "1970-01-01T00:00:00.0Z",
+        "timestampEvent": 1730641489267
+    }
+}
